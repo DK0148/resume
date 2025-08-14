@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanushka Thilan - Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Dhanushka Thilan</div>
+            <ul class="nav-menu">
+                <li class="nav-item active" data-section="experience">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Experience
+                </li>
+                <li class="nav-item" data-section="work">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Work
+                </li>
+                <li class="nav-item" data-section="skills">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <polyline points="16,18 22,12 16,6"></polyline>
+                        <polyline points="8,6 2,12 8,18"></polyline>
+                    </svg>
+                    Skills
+                </li>
+                <li class="nav-item" data-section="contact">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                        <path d="M22 2 11 13"></path>
+                    </svg>
+                    Contact
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        I'm <span class="gradient-text">Dhanushka</span>.
+                    </h1>
+                    <h2 class="hero-subtitle">A Web Developer</h2>
+                    <h3 class="hero-location">
+                        based in <span class="location-highlight">Colombo</span>.
+                    </h3>
+                    <p class="hero-description">
+                        I'm a passionate developer you will enjoy working with. If you have a project simple or complex that needs some work with development or improvement, I'm your guy.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="showSection('work')">View My Work</button>
+                        <button class="btn btn-outline" onclick="showSection('contact')">Get In Touch</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring">
+                            <div class="profile-image">
+                                <img src="C:\Users\MSI\Downloads\WhatsApp Image 2025-07-20 at 08.47.29_c6d00e86.jpg" alt="Profile">
+                            </div>
+                        </div>
+                        <div class="floating-icon">
+                            <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="white">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Experience Section -->
+            <div id="experience-content" class="content-panel">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Web Developer</h3>
+                            <p class="experience-company">Niolla Pvt</p>
+                        </div>
+                        <span class="experience-period">2022 - Present</span>
+                    </div>
+                    <p class="experience-description">
+                        Web developer with a focus on front-end and back-end development to deliver user-centered solutions.
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Full Stack Developer</h3>
+                            <p class="experience-company">Niolla Pvt</p>
+                        </div>
+                        <span class="experience-period">2020 - Present</span>
+                    </div>
+                    <p class="experience-description">
+                        Developed and maintained web sites
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">UI/UX Designer</h3>
+                            <p class="experience-company">Niolla Pvt</p>
+                        </div>
+                        <span class="experience-period">2020 - 2022</span>
+                    </div>
+                    <p class="experience-description">
+                        Designed user interfaces for various clients, and created design systems that improved user engagement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Work Section -->
+            <div id="work-content" class="content-panel hidden">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="E-Commerce Platform" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                View Project
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="m7 17 10-10"></path>
+                                    <path d="M7 7h10v10"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Task Management App" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">Collaborative project management tool with real-time updates</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Material-UI</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                View Project
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="m7 17 10-10"></path>
+                                    <path d="M7 7h10v10"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Analytics Dashboard" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">Data visualization dashboard for business intelligence</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                View Project
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="m7 17 10-10"></path>
+                                    <path d="M7 7h10v10"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills-content" class="content-panel hidden">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="82"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percentage">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="87"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="78"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact-content" class="content-panel hidden">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p class="contact-description">
+                            I'm always open to discussing new opportunities, creative projects, or just having a chat about technology and design.
+                        </p>
+                        
+                        <div class="contact-item">
+                            <svg class="icon contact-icon" viewBox="0 0 24 24">
+                                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                <path d="M22 2 11 13"></path>
+                            </svg>
+                            <span class="contact-text">dhanushkathilan19@gmail.com</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="icon contact-icon" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span class="contact-text">+1 (555) 123-4567</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="icon contact-icon" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="contact-text">Colombo, Sri Lanka</span>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/a-l-dhanushka-thilan-363030270/" class="social-link" target="_blank" rel="noopener">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input form-textarea" placeholder="Your Message" id="message"></textarea>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="sendMessage()">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    © 2025 Dhanushka All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
